@@ -12,22 +12,22 @@ const containsDuplicate = numb => {
     }
     return false
 };
-const containsDuplicateArr = numb => {
-    let duplicateValue = [];
-    for(let i = 0; i < numb.length; i++){
-        let tempVal = numb[i];
+// const containsDuplicateArr = numb => {
+//     let duplicateValue = [];
+//     for(let i = 0; i < numb.length; i++){
+//         let tempVal = numb[i];
         
-        if(duplicateValue.includes(tempVal)){
-            return true;
-        }else{
-            // duplicateValue.push(tempVal);
-            duplicateValue =  [...duplicateValue, tempVal];
-        }
+//         if(duplicateValue.includes(tempVal)){
+//             return true;
+//         }else{
+//             // duplicateValue.push(tempVal);
+//             duplicateValue =  [...duplicateValue, tempVal];
+//         }
 
-    }
-    return false
-};
-console.log(containsDuplicateArr([1,2,1]))
+//     }
+//     return false
+// };
+// console.log(containsDuplicateArr([1,2,1]))
 
 
 module.exports = containsDuplicate;

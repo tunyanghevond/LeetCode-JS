@@ -12,16 +12,16 @@ function isPalindrome(s) {
   return true;
 }
 
- function hasPalindrome(s){
-  s = s.toLowerCase().replace(/[\W]/g, "");
-   const length = s.length;
-  for(let i = 0; i < length; i++){
-    if(s[i] !== s[length - 1 - i]){
-      return false
-    }
+//  function hasPalindrome(s){
+//   s = s.toLowerCase().replace(/[\W]/g, "");
+//    const length = s.length;
+//   for(let i = 0; i < length; i++){
+//     if(s[i] !== s[length - 1 - i]){
+//       return false
+//     }
     
-  }
-  return true;
-};
-console.log(hasPalindrome('asddsa'))
+//   }
+//   return true;
+// };
+// console.log(hasPalindrome('asddsa'))
 module.exports = isPalindrome;
